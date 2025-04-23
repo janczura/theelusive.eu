@@ -1,0 +1,212 @@
+
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #0a0a0a;
+    color: #e0cc80;
+    background-image: url('https://wow.zamimg.com/images/bg/bg-repeater.jpg');
+    background-attachment: fixed;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+.guild-name {
+    font-family: 'LifeCraft', 'Times New Roman', serif;
+    font-size: 48px;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px #000, 0 0 10px #8a5c2e;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.guild-motto {
+    font-style: italic;
+    color: #a0a0a0;
+    margin-top: 5px;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(to bottom, #1e1e1e, #121212);
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #e0cc80;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffd700;
+    border-color: #8a5c2e;
+    background-color: rgba(138, 92, 46, 0.2);
+    text-shadow: 0 0 5px #ffd700;
+}
+
+/* Sections */
+.section {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-title {
+    color: #ffd700;
+    font-family: 'LifeCraft', 'Times New Roman', serif;
+    font-size: 28px;
+    border-bottom: 1px solid #8a5c2e;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* About section */
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border: 1px solid #8a5c2e;
+    border-radius: 5px;
+}
+
+/* Members section */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    background: linear-gradient(to bottom, #1a1a1a, #121212);
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.member-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #8a5c2e;
+    margin: 0 auto 10px;
+    background-color: #0a0a0a;
+}
+
+.member-name {
+    color: #ffd700;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.member-class {
+    color: #a0a0a0;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.member-rank {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: #8a5c2e;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #a0a0a0;
+    font-size: 14px;
+    border-top: 1px solid #3a3a3a;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu li {
+        margin: 5px 0;
+    }
+}
+
+/* Custom font for WoW feel */
+@font-face {
+    font-family: 'LifeCraft';
+    src: url('https://www.dafontfree.net/data/10/l/1732/LifeCraft.ttf') format('truetype');
+}
